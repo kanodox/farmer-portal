@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div>
+    {% for item in items %}
+    <p>{{item.item_name}}</p>
+    {% endfor %}
+</div>
+{% endblock %}

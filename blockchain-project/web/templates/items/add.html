@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <form action="" method="post" >
+        <input type="text" name="item_name" placeholder="Name"/>
+        <input type="number" name="quantity" placeholder="Quantity"/>
+        <input type="text" name="seller" placeholder="Seller Name" hidden value="{{ g.user['username'] }}"/>
+        <input type="number" name="price" placeholder="Price"/>
+
+        <button>Submit</button>
+    </form>
+</div>
+
+{% endblock %}
